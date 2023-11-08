@@ -56,13 +56,16 @@ header .right-links a {
 /* ========== MAIN CONTAINER ========== */
 
 main {
-  background: url("../images/background.jpg");
-  background-size: cover;
   padding: 25px;
   display: flex;
   flex-wrap: wrap; /* Dit aux enfants de passer les uns sous les autres quand ils n'ont plus de place */
   justify-content: space-around;
   flex: 1;
+}
+
+main.index {
+  background: url("../images/background.jpg");
+  background-size: cover;
 }
 
 main .title {
