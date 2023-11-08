@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap");
 
 * {
-=======
-* 
-{
->>>>>>> 5058faa7ee3f0f28652cf9695403a2afa8c88e74
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,30 +20,30 @@ body {
 /* ========== HEADER ========== */
 
 h1 {
-    color: #50A990;
+  color: #50a990;
 }
 
 h2 {
   font-size: 36px;
   margin-top: 5vh;
   margin-bottom: 20px;
-  }
+}
 
-  h3 {
-    font-size: 22px;
-    margin: 0;
-  }
+h3 {
+  font-size: 22px;
+  margin: 0;
+}
 
-  #search {
-    width: 88%;
-    height: 40px;
-    border: none;
-    background-color: #50A990;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
+#search {
+  width: 88%;
+  height: 40px;
+  border: none;
+  background-color: #50a990;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 header {
   padding: 25px;
   display: flex;
@@ -60,7 +55,6 @@ header .right-links a {
 }
 
 /* ========== MAIN CONTAINER ========== */
-
 
 main {
   background: url("../images/background.jpg");
@@ -77,9 +71,6 @@ main .title {
   text-align: center;
   color: white;
 }
-
-
-
 
 /* ========== White boxes ========== */
 
@@ -146,23 +137,20 @@ main .title {
 }
 
 #departureInput {
-    background-color: #ababab;
-    color: white;
-    
-  }
-
-#arrivalInput{
   background-color: #ababab;
   color: white;
-  
- 
+}
+
+#arrivalInput {
+  background-color: #ababab;
+  color: white;
 }
 #searchBtn {
-    padding: 10px;
-    border: none;
-    background-color: #459e85;
-    border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-  }
+  padding: 10px;
+  border: none;
+  background-color: #459e85;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
