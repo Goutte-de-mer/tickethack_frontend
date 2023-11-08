@@ -4,6 +4,73 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex; /* A mettre sur l'élément parent des éléments que l'on veut placer. Permet de disposer les enfants les uns à côté des autres ou en colonne */
+  flex-direction: column; /* Ne marche qu'avec "display: flex;" permet de remettre les enfants en colonne*/
+}
+
+/* ========== HEADER ========== */
+
+header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between; /* Marche avec "display: flex;", permet d'ajuster l'alignement des enfants */
+}
+
+header .right-links a {
+  padding: 0 10px;
+}
+
+/* ========== MAIN CONTAINER ========== */
+
 main {
   background: url("../images/background.jpg");
+  background-size: cover;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap; /* Dit aux enfants de passer les uns sous les autres quand ils n'ont plus de place */
+  justify-content: space-around;
+  flex: 1;
+}
+
+main .title {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* ========== White boxes ========== */
+
+.formContainer,
+.tripsContainer {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /* Définit l'arrondi des bords */
+  min-width: 300px;
+  height: 350px;
+  text-align: center; /* Centre le texte */
+}
+
+.tripsContainer {
+  overflow-y: auto;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.trainImg {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Alignement au centre des enfants, ici fe l'image */
+}
+.trainImg img {
+  width: 80%;
 }
