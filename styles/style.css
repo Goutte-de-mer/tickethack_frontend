@@ -1,5 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-.main{
-    background: url("tickethack_frontend/images/background.jpg")
+main {
+  background: url("../images/background.jpg");
 }
