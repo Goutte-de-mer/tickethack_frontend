@@ -24,6 +24,35 @@
   align-items: center;
 }
 
+#cart .innerContainer {
+  padding: 0;
+  overflow: hidden;
+}
+
+#cart .tripsDisplayed {
+  padding: 20px 20px 0 20px;
+}
+
+.cart-footer {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #00153e;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+}
+.inner-cart-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.total {
+  color: white;
+}
+
 .innerContainer {
   background-color: white;
   width: 60%;
