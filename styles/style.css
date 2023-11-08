@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,7 @@ body {
   height: 100vh;
   display: flex; /* A mettre sur l'élément parent des éléments que l'on veut placer. Permet de disposer les enfants les uns à côté des autres ou en colonne */
   flex-direction: column; /* Ne marche qu'avec "display: flex;" permet de remettre les enfants en colonne*/
+  font-family: "Nunito Sans", sans-serif;
 }
 
 /* ========== HEADER ========== */
@@ -51,13 +54,16 @@ main .title {
   padding: 20px;
   background-color: white;
   border-radius: 10px; /* Définit l'arrondi des bords */
+  width: 30%;
+  max-width: 400px;
   min-width: 300px;
-  height: 350px;
+  height: 400px;
   text-align: center; /* Centre le texte */
 }
 
 .tripsContainer {
   overflow-y: auto;
+  padding: 20px 10px;
 }
 
 .formContainer form {
@@ -73,4 +79,34 @@ main .title {
 }
 .trainImg img {
   width: 80%;
+  max-width: 200px;
+}
+/* TRIPS LIST */
+.trip {
+  text-align: left;
+  padding: 10px;
+  background: #f5eeee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+}
+.trip:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fieldsContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* BOOK BTN */
+.bookBtn {
+  width: fit-content;
+  padding: 5px 8px;
+  background: #459e85;
+  color: white;
+  border-radius: 5px;
 }
